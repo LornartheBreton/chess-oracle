@@ -1,0 +1,136 @@
+{
+  "name": "Titled-Tuesday-Blitz-March-10-2026",
+  "url": "https://www.chess.com/tournament/live/titled-tuesday-blitz-march-10-2026-6277141",
+  "creator": "CHESScom",
+  "status": "finished",
+  "start_time": 1773158400,
+  "finish_time": 1773166436,
+  "settings": {
+    "type": "swiss",
+    "rules": "chess",
+    "is_rated": true,
+    "is_official": true,
+    "is_invite_only": false,
+    "user_advance_count": 1,
+    "winner_places": 3,
+    "registered_user_count": 476,
+    "total_rounds": 11,
+    "time_class": "blitz",
+    "time_control": "300"
+  },
+  "players": [
+    {
+      "username": "sina-movahed",
+      "status": "winner"
+    },
+    {
+      "username": "magnuscarlsen",
+      "status": "registered"
+    },
+    {
+      "username": "denlaz",
+      "status": "registered"
+    },
+    {
+      "username": "nikotheodorou",
+      "status": "registered"
+    },
+    {
+      "username": "wonderfultime",
+      "status": "registered"
+    },
+    {
+      "username": "mishanick",
+      "status": "registered"
+    },
+    {
+      "username": "miterryble",
+      "status": "registered"
+    },
+    {
+      "username": "konavets",
+      "status": "registered"
+    },
+    {
+      "username": "piliposyanrobertchess",
+      "status": "registered"
+    },
+    {
+      "username": "macho_2006",
+      "status": "registered"
+    },
+    {
+      "username": "hakanazeri2",
+      "status": "registered"
+    },
+    {
+      "username": "yosephtaher",
+      "status": "registered"
+    },
+    {
+      "username": "nihalsarin",
+      "status": "registered"
+    },
+    {
+      "username": "micki-taryan",
+      "status": "registered"
+    },
+    {
+      "username": "fabianocaruana",
+      "status": "registered"
+    },
+    {
+      "username": "gmbenjaminbok",
+      "status": "registered"
+    },
+    {
+      "username": "fghsmn",
+      "status": "registered"
+    },
+    {
+      "username": "kirill_klukin",
+      "status": "registered"
+    },
+    {
+      "username": "polish_fighter3000",
+      "status": "registered"
+    },
+    {
+      "username": "sanan_sjugirov",
+      "status": "registered"
+    },
+    {
+      "username": "chesswarrior7197",
+      "status": "registered"
+    },
+    {
+      "username": "shubinkirill2003",
+      "status": "registered"
+    },
+    {
+      "username": "ghandeevam2003",
+      "status": "registered"
+    },
+    {
+      "username": "cayse",
+      "status": "registered"
+    },
+    {
+      "username": "nitzan_steinberg",
+      "status": "registered"
+    }
+  ],
+  "rounds": [
+    "https://api.chess.com/pub/tournament/titled-tuesday-blitz-march-10-2026-6277141/1",
+    "https://api.chess.com/pub/tournament/titled-tuesday-blitz-march-10-2026-6277141/2",
+    "https://api.chess.com/pub/tournament/titled-tuesday-blitz-march-10-2026-6277141/3",
+    "https://api.chess.com/pub/tournament/titled-tuesday-blitz-march-10-2026-6277141/4",
+    "https://api.chess.com/pub/tournament/titled-tuesday-blitz-march-10-2026-6277141/5",
+    "https://api.chess.com/pub/tournament/titled-tuesday-blitz-march-10-2026-6277141/6",
+    "https://api.chess.com/pub/tournament/titled-tuesday-blitz-march-10-2026-6277141/7",
+    "https://api.chess.com/pub/tournament/titled-tuesday-blitz-march-10-2026-6277141/8",
+    "https://api.chess.com/pub/tournament/titled-tuesday-blitz-march-10-2026-6277141/9",
+    "https://api.chess.com/pub/tournament/titled-tuesday-blitz-march-10-2026-6277141/10",
+    "https://api.chess.com/pub/tournament/titled-tuesday-blitz-march-10-2026-6277141/11"
+  ]
+}

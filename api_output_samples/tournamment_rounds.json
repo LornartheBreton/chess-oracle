@@ -1,0 +1,1220 @@
+{
+  "url": "https://api.chess.com/pub/tournament/titled-tuesday-blitz-february-10-2026-6221327/1",
+  "groups": [
+    "https://api.chess.com/pub/tournament/titled-tuesday-blitz-february-10-2026-6221327/1/1"
+  ],
+  "players": [
+    {
+      "username": "umuterdemgunduz"
+    },
+    {
+      "username": "lachesisq"
+    },
+    {
+      "username": "jaisankars"
+    },
+    {
+      "username": "gmwso"
+    },
+    {
+      "username": "dey2580"
+    },
+    {
+      "username": "oleksandr_bortnyk"
+    },
+    {
+      "username": "pizzalover2502"
+    },
+    {
+      "username": "fairchess_on_youtube"
+    },
+    {
+      "username": "yohankrokov"
+    },
+    {
+      "username": "polish_fighter3000"
+    },
+    {
+      "username": "cosmokramer2260"
+    },
+    {
+      "username": "parhamov"
+    },
+    {
+      "username": "itay121"
+    },
+    {
+      "username": "miterryble"
+    },
+    {
+      "username": "gh6999"
+    },
+    {
+      "username": "faustinooro"
+    },
+    {
+      "username": "egehany09"
+    },
+    {
+      "username": "sina-movahed"
+    },
+    {
+      "username": "il_cavallo_matto"
+    },
+    {
+      "username": "chesswarrior7197"
+    },
+    {
+      "username": "lion-al-messi"
+    },
+    {
+      "username": "artooon"
+    },
+    {
+      "username": "kaidanov"
+    },
+    {
+      "username": "andreikka"
+    },
+    {
+      "username": "nastyahn"
+    },
+    {
+      "username": "grischuk"
+    },
+    {
+      "username": "kasimovr21"
+    },
+    {
+      "username": "fabianocaruana"
+    },
+    {
+      "username": "fh2411"
+    },
+    {
+      "username": "sergoy"
+    },
+    {
+      "username": "nobodyjeroen"
+    },
+    {
+      "username": "rezamahdavi2008"
+    },
+    {
+      "username": "patricius007"
+    },
+    {
+      "username": "rud_makarian"
+    },
+    {
+      "username": "coachsuhaas"
+    },
+    {
+      "username": "suyarov1"
+    },
+    {
+      "username": "janmur7"
+    },
+    {
+      "username": "frederiksvane"
+    },
+    {
+      "username": "smiechu"
+    },
+    {
+      "username": "sanan_sjugirov"
+    },
+    {
+      "username": "apollonzerotv"
+    },
+    {
+      "username": "turboplombir"
+    },
+    {
+      "username": "ybothg"
+    },
+    {
+      "username": "vaathi_coming"
+    },
+    {
+      "username": "guillead1"
+    },
+    {
+      "username": "chito89"
+    },
+    {
+      "username": "alomaterapia"
+    },
+    {
+      "username": "ohanyaneminchess"
+    },
+    {
+      "username": "elnaz_kaliakhmet"
+    },
+    {
+      "username": "angry_twin"
+    },
+    {
+      "username": "dosto07"
+    },
+    {
+      "username": "gmbenjaminbok"
+    },
+    {
+      "username": "kielinkei"
+    },
+    {
+      "username": "beca95"
+    },
+    {
+      "username": "wunderkind2011"
+    },
+    {
+      "username": "gmakobianstl"
+    },
+    {
+      "username": "infiniteflo"
+    },
+    {
+      "username": "crescentmoon2411"
+    },
+    {
+      "username": "hephaestus_11"
+    },
+    {
+      "username": "kirill_klukin"
+    },
+    {
+      "username": "jup1978"
+    },
+    {
+      "username": "cayse"
+    },
+    {
+      "username": "alejandro2006lara"
+    },
+    {
+      "username": "formerprodigy"
+    },
+    {
+      "username": "lukaslebakken"
+    },
+    {
+      "username": "goshachai2010"
+    },
+    {
+      "username": "mr-uteligger"
+    },
+    {
+      "username": "jcibarra"
+    },
+    {
+      "username": "cristianchess19"
+    },
+    {
+      "username": "iball95"
+    },
+    {
+      "username": "miki_gb"
+    },
+    {
+      "username": "tsaruk_maks"
+    },
+    {
+      "username": "komogro"
+    },
+    {
+      "username": "dretch"
+    },
+    {
+      "username": "queladri"
+    },
+    {
+      "username": "pouya21"
+    },
+    {
+      "username": "alex_banzea"
+    },
+    {
+      "username": "sam_chessmood"
+    },
+    {
+      "username": "sultaic"
+    },
+    {
+      "username": "nitzan_steinberg"
+    },
+    {
+      "username": "deenzerz"
+    },
+    {
+      "username": "klimkoj"
+    },
+    {
+      "username": "sleeping_in_the_fire"
+    },
+    {
+      "username": "mitrabhaa"
+    },
+    {
+      "username": "manukyan_artak"
+    },
+    {
+      "username": "qminhlcf"
+    },
+    {
+      "username": "bencus12"
+    },
+    {
+      "username": "alexrustemov"
+    },
+    {
+      "username": "mapl3man"
+    },
+    {
+      "username": "byniolus"
+    },
+    {
+      "username": "cartonmaster"
+    },
+    {
+      "username": "chesniu"
+    },
+    {
+      "username": "eloist"
+    },
+    {
+      "username": "superchess02"
+    },
+    {
+      "username": "witty_alien"
+    },
+    {
+      "username": "csb7"
+    },
+    {
+      "username": "nastypanda"
+    },
+    {
+      "username": "germanovs_georgijs"
+    },
+    {
+      "username": "windwhistler11"
+    },
+    {
+      "username": "darkalekhine"
+    },
+    {
+      "username": "futurechamp1907"
+    },
+    {
+      "username": "wmirbv"
+    },
+    {
+      "username": "ananya2898"
+    },
+    {
+      "username": "x-6155696141"
+    },
+    {
+      "username": "nitalucian"
+    },
+    {
+      "username": "minisim"
+    },
+    {
+      "username": "gaidym72"
+    },
+    {
+      "username": "nodariousbig"
+    },
+    {
+      "username": "gasparasprelliok"
+    },
+    {
+      "username": "antony-soprano01"
+    },
+    {
+      "username": "maurijs"
+    },
+    {
+      "username": "kingnb"
+    },
+    {
+      "username": "pesandu_liyanage_1"
+    },
+    {
+      "username": "wise_guyyy"
+    },
+    {
+      "username": "dimoointheworld"
+    },
+    {
+      "username": "krzyzan94"
+    },
+    {
+      "username": "cocosiukas"
+    },
+    {
+      "username": "vovachesss"
+    },
+    {
+      "username": "r-sham"
+    },
+    {
+      "username": "allcer7"
+    },
+    {
+      "username": "ket_cha"
+    },
+    {
+      "username": "iljiushenok_ilya"
+    },
+    {
+      "username": "baratheont"
+    },
+    {
+      "username": "szparu"
+    },
+    {
+      "username": "oleksandrprokhorov"
+    },
+    {
+      "username": "zurability"
+    },
+    {
+      "username": "kulik2007"
+    },
+    {
+      "username": "slidingknight2775"
+    },
+    {
+      "username": "gen-gutman"
+    },
+    {
+      "username": "beltraxtor"
+    },
+    {
+      "username": "arlan_mirzhanov"
+    },
+    {
+      "username": "kildepiotr"
+    },
+    {
+      "username": "gabriel_pereyra"
+    },
+    {
+      "username": "whiteking2009"
+    },
+    {
+      "username": "seasidesunset"
+    },
+    {
+      "username": "ykow2"
+    },
+    {
+      "username": "enzoferrara"
+    },
+    {
+      "username": "reshetkov"
+    },
+    {
+      "username": "endgamedestroyer"
+    },
+    {
+      "username": "roseatwell"
+    },
+    {
+      "username": "hatsak7"
+    },
+    {
+      "username": "granatomet552"
+    },
+    {
+      "username": "matvii_b"
+    },
+    {
+      "username": "emperor87"
+    },
+    {
+      "username": "mjelcic"
+    },
+    {
+      "username": "gedizov"
+    },
+    {
+      "username": "barriochess"
+    },
+    {
+      "username": "khazhatuly_alikhan"
+    },
+    {
+      "username": "ivandrade10"
+    },
+    {
+      "username": "elcandado"
+    },
+    {
+      "username": "gabrielcarckeno"
+    },
+    {
+      "username": "nikavolkov"
+    },
+    {
+      "username": "liondinamic"
+    },
+    {
+      "username": "mw86"
+    },
+    {
+      "username": "ridethesky89"
+    },
+    {
+      "username": "bullycloud"
+    },
+    {
+      "username": "gobiquanvo"
+    },
+    {
+      "username": "ant_chess_2019"
+    },
+    {
+      "username": "danifv"
+    },
+    {
+      "username": "der_balak_3halak"
+    },
+    {
+      "username": "garnikn"
+    },
+    {
+      "username": "georgiossouleidis"
+    },
+    {
+      "username": "ach19"
+    },
+    {
+      "username": "dontmesswiththefish"
+    },
+    {
+      "username": "tonilator"
+    },
+    {
+      "username": "karinachess1"
+    },
+    {
+      "username": "janjestem"
+    },
+    {
+      "username": "allblacksgoat"
+    },
+    {
+      "username": "ferdipy"
+    },
+    {
+      "username": "chesskhan11"
+    },
+    {
+      "username": "xuetianhao"
+    },
+    {
+      "username": "maurinm"
+    },
+    {
+      "username": "fmalexhdez"
+    },
+    {
+      "username": "zoktayyyyfanclubbb"
+    },
+    {
+      "username": "masteratracos"
+    },
+    {
+      "username": "im_alex_ivanov"
+    },
+    {
+      "username": "mise2020"
+    },
+    {
+      "username": "endgamemaster51"
+    },
+    {
+      "username": "ludin-esteban-jaimes-gonz"
+    },
+    {
+      "username": "gennady_kozlov"
+    },
+    {
+      "username": "jan2404"
+    },
+    {
+      "username": "m_ezat"
+    },
+    {
+      "username": "tiagomangialardo"
+    },
+    {
+      "username": "tetrix83"
+    },
+    {
+      "username": "cheessmasteer54"
+    },
+    {
+      "username": "beawuids"
+    },
+    {
+      "username": "alenzer"
+    },
+    {
+      "username": "andrew-blr"
+    },
+    {
+      "username": "thesmallergreek"
+    },
+    {
+      "username": "dawidczerw"
+    },
+    {
+      "username": "eugenefurman"
+    },
+    {
+      "username": "logicbaba"
+    },
+    {
+      "username": "mcwzpk"
+    },
+    {
+      "username": "trojan-knight"
+    },
+    {
+      "username": "viper_108"
+    },
+    {
+      "username": "robert_sava"
+    },
+    {
+      "username": "katheringomezarias"
+    },
+    {
+      "username": "chessbaerchen"
+    },
+    {
+      "username": "ahmed_naser1"
+    },
+    {
+      "username": "therabbit19"
+    },
+    {
+      "username": "pfalcon1949"
+    },
+    {
+      "username": "liusia"
+    },
+    {
+      "username": "hikaru"
+    },
+    {
+      "username": "gorindeshi"
+    },
+    {
+      "username": "nikotheodorou"
+    },
+    {
+      "username": "gcamachomartinez"
+    },
+    {
+      "username": "ghandeevam2003"
+    },
+    {
+      "username": "sn2022s"
+    },
+    {
+      "username": "sibelephant"
+    },
+    {
+      "username": "theinfinity011"
+    },
+    {
+      "username": "micki-taryan"
+    },
+    {
+      "username": "vladgoncharov"
+    },
+    {
+      "username": "konavets"
+    },
+    {
+      "username": "maxleto"
+    },
+    {
+      "username": "bogdandeac"
+    },
+    {
+      "username": "mattheii"
+    },
+    {
+      "username": "mishanick"
+    },
+    {
+      "username": "mwpchess"
+    },
+    {
+      "username": "wonderfultime"
+    },
+    {
+      "username": "mathiascasalaspro"
+    },
+    {
+      "username": "lyonbeast"
+    },
+    {
+      "username": "nigirisushies"
+    },
+    {
+      "username": "jefferyx"
+    },
+    {
+      "username": "bazar-wokzal"
+    },
+    {
+      "username": "javokhir_sindarov05"
+    },
+    {
+      "username": "vesper2018"
+    },
+    {
+      "username": "msb2"
+    },
+    {
+      "username": "juan-jose-taylor-rodrigue"
+    },
+    {
+      "username": "chessfighter_2011"
+    },
+    {
+      "username": "earlybird2012"
+    },
+    {
+      "username": "amintabatabaei"
+    },
+    {
+      "username": "kingside_rook"
+    },
+    {
+      "username": "gm_dmitrij"
+    },
+    {
+      "username": "samdanov"
+    },
+    {
+      "username": "zhuu96"
+    },
+    {
+      "username": "kz_champ_gm"
+    },
+    {
+      "username": "vincentkeymer"
+    },
+    {
+      "username": "drwonderkid"
+    },
+    {
+      "username": "shield12"
+    },
+    {
+      "username": "opqrc"
+    },
+    {
+      "username": "shimastream"
+    },
+    {
+      "username": "midgardsormur"
+    },
+    {
+      "username": "igor_janik"
+    },
+    {
+      "username": "nexoknight11"
+    },
+    {
+      "username": "matthewg-p4p"
+    },
+    {
+      "username": "kimkibo"
+    },
+    {
+      "username": "sergeant_james"
+    },
+    {
+      "username": "ural58"
+    },
+    {
+      "username": "rasmussvane"
+    },
+    {
+      "username": "saihanthiha"
+    },
+    {
+      "username": "harsha_bharathakoti"
+    },
+    {
+      "username": "wpwpwp-2015"
+    },
+    {
+      "username": "anton_demchenko"
+    },
+    {
+      "username": "joliyroger"
+    },
+    {
+      "username": "jumbo"
+    },
+    {
+      "username": "noname372k"
+    },
+    {
+      "username": "piliposyanrobertchess"
+    },
+    {
+      "username": "actuary44"
+    },
+    {
+      "username": "ilqar_74"
+    },
+    {
+      "username": "vm2027"
+    },
+    {
+      "username": "dr_tyger"
+    },
+    {
+      "username": "mammadzadag"
+    },
+    {
+      "username": "whiteknight2612"
+    },
+    {
+      "username": "bapttoche"
+    },
+    {
+      "username": "metiforce"
+    },
+    {
+      "username": "chuessco"
+    },
+    {
+      "username": "durarbayli"
+    },
+    {
+      "username": "gmfyhr1"
+    },
+    {
+      "username": "knvb"
+    },
+    {
+      "username": "tiltedknight123"
+    },
+    {
+      "username": "trahtarbelarus"
+    },
+    {
+      "username": "mcqueen444"
+    },
+    {
+      "username": "ckgchess"
+    },
+    {
+      "username": "stt170116"
+    },
+    {
+      "username": "kosak12"
+    },
+    {
+      "username": "asvz"
+    },
+    {
+      "username": "jakopogi"
+    },
+    {
+      "username": "kotofeyca"
+    },
+    {
+      "username": "stollenmonster"
+    },
+    {
+      "username": "ljuks68"
+    },
+    {
+      "username": "robertojbm"
+    },
+    {
+      "username": "teresin05"
+    },
+    {
+      "username": "fghsmn"
+    },
+    {
+      "username": "safikiet"
+    },
+    {
+      "username": "moro182"
+    },
+    {
+      "username": "propellerboy01"
+    },
+    {
+      "username": "alexander_donchenko"
+    },
+    {
+      "username": "madeinleningrad"
+    },
+    {
+      "username": "lamomiajunior"
+    },
+    {
+      "username": "deanklobucar"
+    },
+    {
+      "username": "iwanyu"
+    },
+    {
+      "username": "niviattack"
+    },
+    {
+      "username": "garayevkanan"
+    },
+    {
+      "username": "cherneevo_23"
+    },
+    {
+      "username": "aa175"
+    },
+    {
+      "username": "sofiia_hryzlova"
+    },
+    {
+      "username": "a-fier"
+    },
+    {
+      "username": "mostafasakha"
+    },
+    {
+      "username": "flawless_fighter"
+    },
+    {
+      "username": "rcc_2024"
+    },
+    {
+      "username": "alexpapasimakopoulos"
+    },
+    {
+      "username": "bonantagulo"
+    },
+    {
+      "username": "tunartank"
+    },
+    {
+      "username": "mikhal867"
+    },
+    {
+      "username": "gm_path"
+    },
+    {
+      "username": "shahzodbek_2010"
+    },
+    {
+      "username": "shavkatov02"
+    },
+    {
+      "username": "cheer_down"
+    },
+    {
+      "username": "only_strong_moves"
+    },
+    {
+      "username": "fischerbobbyjames"
+    },
+    {
+      "username": "alexboy14"
+    },
+    {
+      "username": "recombinant"
+    },
+    {
+      "username": "slipperyspeedster"
+    },
+    {
+      "username": "miguel-la"
+    },
+    {
+      "username": "individoom"
+    },
+    {
+      "username": "battery_chess"
+    },
+    {
+      "username": "frederickthemate"
+    },
+    {
+      "username": "hyuslin"
+    },
+    {
+      "username": "alen_chessmate"
+    },
+    {
+      "username": "gambitgiesbergen"
+    },
+    {
+      "username": "boundless_strike"
+    },
+    {
+      "username": "francesatop"
+    },
+    {
+      "username": "colleofduty"
+    },
+    {
+      "username": "saranyadevinarahari"
+    },
+    {
+      "username": "nikitashandrygin"
+    },
+    {
+      "username": "tugaychess"
+    },
+    {
+      "username": "ganiev_artur11"
+    },
+    {
+      "username": "godzillator"
+    },
+    {
+      "username": "caroexpert"
+    },
+    {
+      "username": "venemycin"
+    },
+    {
+      "username": "pavle896"
+    },
+    {
+      "username": "acidshazz"
+    },
+    {
+      "username": "m_pank_537"
+    },
+    {
+      "username": "premierchess64"
+    },
+    {
+      "username": "rafaelsharon"
+    },
+    {
+      "username": "shivananda1964"
+    },
+    {
+      "username": "chomiczek786"
+    },
+    {
+      "username": "knightinshiningarmour16"
+    },
+    {
+      "username": "gianmarco_es"
+    },
+    {
+      "username": "xyloxia"
+    },
+    {
+      "username": "sajid0987654321"
+    },
+    {
+      "username": "cabezauro"
+    },
+    {
+      "username": "meri-arabidze"
+    },
+    {
+      "username": "yushko_olga"
+    },
+    {
+      "username": "nikolakis2014"
+    },
+    {
+      "username": "hilleltoledo"
+    },
+    {
+      "username": "viktorskliarov"
+    },
+    {
+      "username": "willi_skibbe"
+    },
+    {
+      "username": "ginger_gm"
+    },
+    {
+      "username": "tuongminhcute"
+    },
+    {
+      "username": "antoni_radzimski"
+    },
+    {
+      "username": "luisfsiles"
+    },
+    {
+      "username": "akewjon"
+    },
+    {
+      "username": "weezhun93"
+    },
+    {
+      "username": "manitodeplomo"
+    },
+    {
+      "username": "x-6605293955"
+    },
+    {
+      "username": "anasta10"
+    },
+    {
+      "username": "timur_nurzhanov"
+    },
+    {
+      "username": "nicki2013"
+    },
+    {
+      "username": "navyblue1"
+    },
+    {
+      "username": "speshka"
+    },
+    {
+      "username": "taglit"
+    },
+    {
+      "username": "oliver_wartiovaara"
+    },
+    {
+      "username": "albadelomass"
+    },
+    {
+      "username": "xiaoxuan2012"
+    },
+    {
+      "username": "hannahsaycestreams"
+    },
+    {
+      "username": "bulletteemo"
+    },
+    {
+      "username": "mirchi_26"
+    },
+    {
+      "username": "keithonsky"
+    },
+    {
+      "username": "ramu_k_fm_ft"
+    },
+    {
+      "username": "lerry0525"
+    },
+    {
+      "username": "elessar16"
+    },
+    {
+      "username": "fariza2018"
+    },
+    {
+      "username": "lordiron"
+    },
+    {
+      "username": "casper"
+    },
+    {
+      "username": "lopesakalopes"
+    },
+    {
+      "username": "rollercoaster29"
+    },
+    {
+      "username": "chessgirl_leyla"
+    },
+    {
+      "username": "sammed_shete"
+    },
+    {
+      "username": "zeronybah"
+    },
+    {
+      "username": "yyaroslavchess2010"
+    },
+    {
+      "username": "hrvojezagreb"
+    },
+    {
+      "username": "aryan_tamadon"
+    },
+    {
+      "username": "lacafi"
+    },
+    {
+      "username": "gryffindorac8"
+    },
+    {
+      "username": "irina_mikhaylova"
+    },
+    {
+      "username": "crazy_m_attack"
+    },
+    {
+      "username": "jaroslavsobek"
+    },
+    {
+      "username": "mikakarttunen"
+    },
+    {
+      "username": "matinghaffarifar"
+    },
+    {
+      "username": "wgraif"
+    },
+    {
+      "username": "mikewizard"
+    },
+    {
+      "username": "stormstrategist"
+    },
+    {
+      "username": "saara_sunea"
+    },
+    {
+      "username": "aloe_normansen"
+    },
+    {
+      "username": "shirovin"
+    },
+    {
+      "username": "grotbchess"
+    },
+    {
+      "username": "sevilplayschess"
+    },
+    {
+      "username": "semetey"
+    },
+    {
+      "username": "marcbarcelo"
+    },
+    {
+      "username": "nbk90"
+    },
+    {
+      "username": "magnusshawa_chess"
+    },
+    {
+      "username": "eleyah"
+    },
+    {
+      "username": "kashthuri3"
+    }
+  ]
+}
