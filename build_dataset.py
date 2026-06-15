@@ -36,6 +36,11 @@ from tqdm import tqdm
 TOURNAMENTS = [
     "titled-tuesday-blitz-february-10-2026-6221327",
     "titled-tuesday-blitz-march-10-2026-6277141",
+    "titled-tuesday-blitz-march-17-2026-6282783",
+    "titled-tuesday-blitz-march-24-2026-6292855",
+    "titled-tuesday-blitz-march-31-2026-6322539",
+    "titled-tuesday-blitz-april-07-2026-6342683",
+    "titled-tuesday-blitz-april-14-2026-6362193"
 ]
 API_BASE = "https://api.chess.com/pub"
 USER_AGENT = "titled-tuesday-dataset-builder (take-home exercise; contact: candidate)"
