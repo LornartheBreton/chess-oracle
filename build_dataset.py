@@ -21,7 +21,9 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 import numpy as np
@@ -71,6 +73,17 @@ TITLE_ORDINAL = {
 _session = requests.Session()
 _session.headers.update({"User-Agent": USER_AGENT, "Accept": "application/json"})
 
+# Per-URL locks so parallel threads never issue duplicate HTTP requests.
+_url_locks: dict[str, threading.Lock] = {}
+_url_locks_meta = threading.Lock()
+
+
+def _get_url_lock(url: str) -> threading.Lock:
+    with _url_locks_meta:
+        if url not in _url_locks:
+            _url_locks[url] = threading.Lock()
+        return _url_locks[url]
+
 
 def cache_path(url: str) -> Path:
     slug = re.sub(r"[^a-zA-Z0-9]+", "_", url.replace(API_BASE, "")).strip("_")[:120]
@@ -79,26 +92,36 @@ def cache_path(url: str) -> Path:
 
 
 def fetch_json(url: str) -> dict | None:
-    """GET a PubAPI URL with caching and retry/backoff. Returns None on 404."""
+    """GET a PubAPI URL with caching and retry/backoff. Returns None on 404.
+
+    Thread-safe: a per-URL lock prevents duplicate HTTP requests when called
+    from a ThreadPoolExecutor.  The double-check after acquiring the lock
+    ensures that a cache file written by another thread is used immediately.
+    """
     path = cache_path(url)
     if path.exists():
         return json.loads(path.read_text())
 
-    for attempt in range(MAX_RETRIES):
-        resp = _session.get(url, timeout=30)
-        if resp.status_code == 200:
-            data = resp.json()
-            path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(json.dumps(data))
-            time.sleep(REQUEST_SLEEP)
-            return data
-        if resp.status_code == 404:
-            path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text("null")
-            return None
-        # 429 / 5xx: exponential backoff
-        time.sleep(2 ** attempt)
-    raise RuntimeError(f"Failed to fetch {url} after {MAX_RETRIES} retries")
+    with _get_url_lock(url):
+        # Re-check inside the lock: another thread may have populated the cache.
+        if path.exists():
+            return json.loads(path.read_text())
+
+        for attempt in range(MAX_RETRIES):
+            resp = _session.get(url, timeout=30)
+            if resp.status_code == 200:
+                data = resp.json()
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(json.dumps(data))
+                time.sleep(REQUEST_SLEEP)
+                return data
+            if resp.status_code == 404:
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text("null")
+                return None
+            # 429 / 5xx: exponential backoff
+            time.sleep(2 ** attempt)
+        raise RuntimeError(f"Failed to fetch {url} after {MAX_RETRIES} retries")
 
 
 # --------------------------------------------------------------------------
@@ -372,35 +395,68 @@ def add_history_features(df: pd.DataFrame) -> pd.DataFrame:
 # Player enrichment (profiles + stats)
 # --------------------------------------------------------------------------
 
-def fetch_player_tables(usernames: list[str]) -> pd.DataFrame:
-    rows = []
-    for u in tqdm(sorted(usernames), desc="players"):
-        profile = fetch_json(f"{API_BASE}/player/{u}") or {}
-        stats = fetch_json(f"{API_BASE}/player/{u}/stats") or {}
-        blitz = stats.get("chess_blitz", {})
-        bl_rec = blitz.get("record", {})
-        bl_n = sum(bl_rec.get(k, 0) for k in ("win", "loss", "draw"))
-        rows.append({
-            "username": u,
-            "title": profile.get("title"),
-            "joined": profile.get("joined"),
-            "followers": profile.get("followers"),
-            "is_streamer": profile.get("is_streamer"),
-            "league": profile.get("league"),
-            "country": (profile.get("country") or "").rsplit("/", 1)[-1] or None,
-            "blitz_rating_current": blitz.get("last", {}).get("rating"),
-            "blitz_rd": blitz.get("last", {}).get("rd"),
-            "blitz_best_rating": blitz.get("best", {}).get("rating"),
-            "blitz_n_games": bl_n if bl_n else None,
-            "blitz_win_rate": bl_rec.get("win", 0) / bl_n if bl_n else None,
-            "blitz_draw_rate": bl_rec.get("draw", 0) / bl_n if bl_n else None,
-            "bullet_rating": stats.get("chess_bullet", {}).get("last", {}).get("rating"),
-            "rapid_rating": stats.get("chess_rapid", {}).get("last", {}).get("rating"),
-            "fide": stats.get("fide") or None,
-            "puzzle_rush_best": stats.get("puzzle_rush", {}).get("best", {}).get("score"),
-            "tactics_highest": stats.get("tactics", {}).get("highest", {}).get("rating"),
-        })
-    return pd.DataFrame(rows)
+PLAYER_WORKERS = 16  # concurrent threads for player API calls
+
+
+def _fetch_player_row(u: str) -> dict:
+    """Fetch profile + stats for one player and return a flat data dict."""
+    profile = fetch_json(f"{API_BASE}/player/{u}") or {}
+    stats = fetch_json(f"{API_BASE}/player/{u}/stats") or {}
+    blitz = stats.get("chess_blitz", {})
+    bl_rec = blitz.get("record", {})
+    bl_n = sum(bl_rec.get(k, 0) for k in ("win", "loss", "draw"))
+    return {
+        "username": u,
+        "title": profile.get("title"),
+        "joined": profile.get("joined"),
+        "followers": profile.get("followers"),
+        "is_streamer": profile.get("is_streamer"),
+        "league": profile.get("league"),
+        "country": (profile.get("country") or "").rsplit("/", 1)[-1] or None,
+        "blitz_rating_current": blitz.get("last", {}).get("rating"),
+        "blitz_rd": blitz.get("last", {}).get("rd"),
+        "blitz_best_rating": blitz.get("best", {}).get("rating"),
+        "blitz_n_games": bl_n if bl_n else None,
+        "blitz_win_rate": bl_rec.get("win", 0) / bl_n if bl_n else None,
+        "blitz_draw_rate": bl_rec.get("draw", 0) / bl_n if bl_n else None,
+        "bullet_rating": stats.get("chess_bullet", {}).get("last", {}).get("rating"),
+        "rapid_rating": stats.get("chess_rapid", {}).get("last", {}).get("rating"),
+        "fide": stats.get("fide") or None,
+        "puzzle_rush_best": stats.get("puzzle_rush", {}).get("best", {}).get("score"),
+        "tactics_highest": stats.get("tactics", {}).get("highest", {}).get("rating"),
+    }
+
+
+def fetch_player_tables(
+    usernames: list[str], max_workers: int = PLAYER_WORKERS
+) -> pd.DataFrame:
+    """Fetch player profiles and stats in parallel, with a tqdm progress bar.
+
+    Each future's result is stored at its original index so the output order
+    is deterministic (sorted by username) regardless of completion order.
+    Failed fetches emit a warning and fall back to a username-only stub row
+    so the rest of the pipeline can still join cleanly.
+    """
+    sorted_usernames = sorted(usernames)
+    rows: list[dict | None] = [None] * len(sorted_usernames)
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {
+            executor.submit(_fetch_player_row, u): i
+            for i, u in enumerate(sorted_usernames)
+        }
+        with tqdm(total=len(sorted_usernames), desc="players") as pbar:
+            for future in as_completed(futures):
+                idx = futures[future]
+                try:
+                    rows[idx] = future.result()
+                except Exception as exc:
+                    u = sorted_usernames[idx]
+                    print(f"\nWarning: failed to fetch player {u!r}: {exc}")
+                    rows[idx] = {"username": u}  # stub; NaN-fills on merge
+                pbar.update(1)
+
+    return pd.DataFrame([r for r in rows if r is not None])
 
 
 def merge_player_features(df: pd.DataFrame, players: pd.DataFrame) -> pd.DataFrame:
